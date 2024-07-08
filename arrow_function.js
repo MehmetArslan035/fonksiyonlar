@@ -51,4 +51,11 @@ console.log(hacim(2,5));
 const maxbul=(a,b)=> a>b ? "a Değeri büyüktür" : "b değeri büyüktür"
 console.log(maxbul(4,21));
 
-
+const asal=(num)=> {
+    if (num <=1) return "Sayı asal değil";
+    for(let i=2; i<=Math.sqrt(num);i++){
+        if(num%i===0) return"Sayı asal değil";
+    }
+    return"Sayı asal"
+}
+console.log(asal(13));
